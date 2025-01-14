@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GorselProgramlamaFinalOdevi.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <StackLayout>
+                <StackLayout x:Name="loginStack" Spacing="10">
+
+                    <Label Text="Oturum Aç"/>
+                    <Entry x:Name="l_email" Placeholder="Email" Keyboard="Email"/>
+                    <Entry x:Name="l_password" Placeholder="Password" IsPassword="True"/>
+
+                    <Button Text="Oturum Aç" Clicked="LoginClicked" />
+                    <Button Text="Hesabım Yok" BackgroundColor="Transparent" TextColor="Purple" Clicked="ShowScreen"/>
+
+                </StackLayout>
+
+                <StackLayout x:Name="registerStack" Spacing="10" IsVisible="False">
+                    <Label Text="Kayıt Ol"/>
+                    <Entry x:Name="r_username" Placeholder="Username" Keyboard="Default"/>
+                    <Entry x:Name="r_email" Placeholder="Email" Keyboard="Email"/>
+                    <Entry x:Name="r_password" Placeholder="Password" IsPassword="True"/>
+
+                    <Button Text="Register" Clicked="RegisterClicked"/>
+                    <Button Text="I already have an account" BackgroundColor="Transparent" TextColor="Purple" Clicked="ShowScreen"/>
+                </StackLayout>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

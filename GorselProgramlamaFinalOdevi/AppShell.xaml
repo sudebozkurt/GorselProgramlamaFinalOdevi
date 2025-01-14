@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="GorselProgramlamaFinalOdevi.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:GorselProgramlamaFinalOdevi"
+    Shell.FlyoutBehavior="Disabled"
+    Title="GorselProgramlamaFinalOdevi">
+
+    <ShellContent
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage"/>
+    <ShellContent
+        Title="Who am I?"
+        ContentTemplate="{DataTemplate local:Home}"
+        Route="Home"/>
+    <ShellContent
+        Title="Exchange"
+        ContentTemplate="{DataTemplate local:Exchange}"
+        Route="Exchange"
+        Icon="exchange.png"/>
+    <ShellContent
+        Title="News"
+        ContentTemplate="{DataTemplate local:News}"
+        Route="News"
+        Icon="news.png"/>
+    <ShellContent
+        Title="Weather"
+        ContentTemplate="{DataTemplate local:Weather}"
+        Route="Weather"
+        Icon="weather.png"/>
+    <ShellContent
+        Title="Todo List"
+        ContentTemplate="{DataTemplate local:TodoList}"
+        Route="TodoList"
+        Icon="todolist.png"/>
+    <ShellContent
+        Title="Settings"
+        ContentTemplate="{DataTemplate local:Settings}"
+        Route="Settings"
+        Icon="settings.png"/>
+
+</Shell>
